@@ -1,0 +1,26 @@
+{
+  "name": "paris-tours",
+  "version": "1.0.0",
+  "description": "get paris tours visit",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss  css/style.css -w",
+    "lint": "eslint ./",
+    "precommit": "npm run lint" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batouche-dev/advanced-css.git"
+  },
+  "author": "azedine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batouche-dev/advanced-css/issues"
+  },
+  "homepage": "https://github.com/batouche-dev/advanced-css#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3",
+    "node-sass": "^4.13.1"
+  }
+}
