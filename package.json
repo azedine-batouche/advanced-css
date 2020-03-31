@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss  css/style.css -w",
-    "lint": "eslint ./",
-    "precommit": "npm run lint" 
+    "lint": "eslint ./js/script.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +18,16 @@
   },
   "homepage": "https://github.com/batouche-dev/advanced-css#readme",
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "eslint": "^6.8.0",
     "husky": "^4.2.3",
     "node-sass": "^4.13.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint"
+    }
   }
 }
