@@ -14,10 +14,9 @@
 @import 'layout/header';
 @import 'layout/grid';
 
-@import 'components//button.scss';
-
 @import 'base/typography';
 
 @import 'components/composition';
-
+@import 'components//button.scss';
+@import 'components/feature-box';
 
