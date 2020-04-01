@@ -42,6 +42,14 @@
       background-color: $color-white;
     }
   }
+  &--blue {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
   &:active {
     transform: translateX(0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
