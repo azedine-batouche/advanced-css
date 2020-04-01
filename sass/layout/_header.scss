@@ -2,14 +2,11 @@
   height: 95vh;
   overflow: hidden;
   position: relative;
-  background-image: linear-gradient(
-      to right bottom,
-      $color-primary-light,
-      $color-primary-dark
-    ),
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
     url(https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__logo-box {
