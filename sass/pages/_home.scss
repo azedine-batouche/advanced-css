@@ -24,3 +24,24 @@
   position: relative;
   padding: 15rem 0;
 }
+
+.section-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+.book {
+  background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 50%, transparent 50%),
+    url(https://images.pexels.com/photos/2091033/pexels-photo-2091033.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-size: cover;
+  border-radius: $border-radius-small;
+  box-shadow: $box-shadow-medium;
+
+  height: 50rem;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
+}
+
+
