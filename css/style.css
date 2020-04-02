@@ -207,6 +207,64 @@ body {
   .row .col-3-of-4 {
     width: calc( 2 * (100% - (3 * 6rem) / 4) + 2 * $gutter-horizantal); }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    border-top: 1px solid #eee;
+    display: inline-block;
+    padding-top: 2rem; }
+  .footer__list {
+    list-style: none; }
+  .footer__items {
+    display: inline-block; }
+    .footer__items:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    background-color: #333;
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #4a7ff0de;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: scale(1.2); }
+  .footer__social {
+    border-top: 1px solid #eee;
+    display: inline-block;
+    padding-top: 2rem;
+    color: #fff;
+    float: right; }
+    .footer__social__icons {
+      font-size: 3rem; }
+      .footer__social__icons:not(:last-child) {
+        margin-right: 1rem; }
+      .footer__social__icons:hover {
+        cursor: pointer; }
+    .footer__social__text {
+      color: #fff;
+      margin-right: 3rem;
+      text-transform: uppercase;
+      vertical-align: super;
+      font-weight: 700; }
+    .footer__social--facebook:hover {
+      color: #3b5999; }
+    .footer__social--instagram:hover {
+      color: #e4405f; }
+    .footer__social--twitter:hover {
+      color: #55acee; }
+    .footer__social--pinterest:hover {
+      color: #bd081c; }
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;

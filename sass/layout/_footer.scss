@@ -1,0 +1,90 @@
+.footer {
+  background-color: $color-gray-footer;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+
+  &__navigation {
+    border-top: 1px solid $color-grey-light-2;
+    display: inline-block;
+    padding-top: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__items {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      background-color: $color-gray-footer;
+      color: $color-grey-light-1;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: scale(1.2);
+    }
+  }
+  &__social {
+    border-top: 1px solid $color-grey-light-2;
+    display: inline-block;
+    padding-top: 2rem;
+    color: $color-white;
+    float: right;
+
+    &__icons {
+      font-size: 3rem;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__text {
+      color: $color-white;
+      margin-right: 3rem;
+      text-transform: uppercase;
+      vertical-align: super;
+      font-weight: 700;
+    }
+    &--facebook:hover {
+      color: #3b5999;
+    }
+    &--instagram:hover {
+      color: #e4405f;
+    }
+    &--twitter:hover {
+      color: #55acee;
+    }
+    &--pinterest:hover {
+      color: #bd081c;
+    }
+  }
+}
