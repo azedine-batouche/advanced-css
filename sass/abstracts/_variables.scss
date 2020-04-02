@@ -3,6 +3,7 @@ $color-primary: #4a7ff0de;
 $color-primary-light: #bfd6ffc4;
 $color-primary-dark: #1f4bb9cb;
 $color-gray-dark: #777;
+$color-gray-extrem: #999;
 $color-white: #fff;
 $color-black: #000;
 $color-grey-light-1: #f7f7f7;
@@ -19,3 +20,9 @@ $default-font-size: 1.6rem;
 $row-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizantal: 6rem;
+
+//BORDER
+$border-radius-small: 3px;
+
+//BOX-SHADOW
+$box-shadow-medium: 0 1rem 4rem rgba($color-black, 0.015);
