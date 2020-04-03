@@ -17,12 +17,12 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="" class="navigation__link">A &nbsp;propos &nbsp;de&nbsp; Paris-Tours</a>
+            <a href="#section-about" class="navigation__link">A &nbsp;propos &nbsp;de&nbsp; Paris-Tours</a>
           </li>
-          <li class="navigation__item"><a href="" class="navigation__link">Vos &nbsp;avantage</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Tours &nbsp;populaire</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Avis &nbsp;clients</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Réservation</a></li>
+          <li class="navigation__item"><a href="#section-features" class="navigation__link">Vos &nbsp;avantage</a></li>
+          <li class="navigation__item"><a href="#section-tours" class="navigation__link">Tours &nbsp;populaire</a></li>
+          <li class="navigation__item"><a href="#section-stories" class="navigation__link">Avis &nbsp;clients</a></li>
+          <li class="navigation__item"><a href="#reservation" class="navigation__link">Réservation</a></li>
         </ul>
       </nav>
     </div>
@@ -35,10 +35,10 @@
           <span class="heading-primary--main">Paris-Tours</span>
           <span class="heading-primary--sub">Lieux inoubliables à Paris</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Decouvrer nos tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated">Decouvrer nos tours</a>
       </div>
     </header>
-    <section class="section-about">
+    <section class="section-about" id="section-about">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
           Viver une expérience unique
@@ -84,7 +84,7 @@
         </div>
       </div>
     </section>
-    <section class="section-features">
+    <section class="section-features" id="section-features">
       <div class="row">
         <div class="col-1-of-4">
           <div class="feature-box">
@@ -124,7 +124,7 @@
         </div>
       </div>
     </section>
-    <section class="section-tours">
+    <section class="section-tours" id="section-tours">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
           Les plus populaires
@@ -158,7 +158,7 @@
                   <p class="card__price-only">Seulement</p>
                   <p class="card__price-value">49€</p>
                 </div>
-                <a href="#" class="btn btn--white">Réserver</a>
+                <a href="#popup" class="btn btn--white">Réserver</a>
               </div>
             </div>
           </div>
@@ -190,7 +190,7 @@
                   <p class="card__price-only">A partir de</p>
                   <p class="card__price-value">99€</p>
                 </div>
-                <a href="#" class="btn btn--white">Réserver</a>
+                <a href="#popup" class="btn btn--white">Réserver</a>
               </div>
             </div>
           </div>
@@ -222,7 +222,7 @@
                   <p class="card__price-only">A partir de</p>
                   <p class="card__price-value">149€</p>
                 </div>
-                <a href="#" class="btn btn--white">Réserver</a>
+                <a href="#popup" class="btn btn--white">Réserver</a>
               </div>
             </div>
           </div>
@@ -233,7 +233,7 @@
       </div>
     </section>
 
-    <section class="section-stories">
+    <section class="section-stories" id="section-stories">
       <div class="bg-video">
         <video class="bg-video__content" autoplay muted loop>
           <source
@@ -390,6 +390,60 @@
         </div>
       </div>
     </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="https://images.unsplash.com/photo-1526893381913-e311045b8064?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
+            alt="Tour photo"
+            class="popup__img"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1474831626379-cfcad2ba6309?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2648&q=80"
+            alt="Tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-medium ">Start booking now</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Veuillez lire les conditions ci-dessou avant de réserver
+          </h3>
+          <p class="popup__text">
+            If you're looking for random paragraphs, you've come to the right place. When a random word or a random
+            sentence isn't quite enough, the next logical step is to find a random paragraph. We created the Random
+            Paragraph Generator with you in mind. The process is quite simple. Choose the number of random paragraphs
+            you'd like to see and click the button. Your chosen number of paragraphs will instantly appear. While it may
+            not be obvious to everyone, there are a number of reasons creating random paragraphs can be useful. A few
+            examples of how some people use this generator are listed in the following paragraphs.
+          </p>
+          <a href="#" class="btn btn--blue">Réserver maintenant</a>
+        </div>
+      </div>
+    </div>
+    <div class="popup-covid" id="popup-covid">
+      <div class="popup-covid__content">
+        <div class="popup-covid__left">
+          <img
+            src="https://images.pexels.com/photos/3936358/pexels-photo-3936358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="covid"
+            class="popup-covid__img"
+          />
+        </div>
+        <div class="popup-covid__right">
+          <a href="#section-tours" class="popup-covid__close">&times;</a>
+          <p class="popup-covid__text">
+            <span class="popup-covid__title">Informations COVID-19 : </span> Conformément aux directives du gouvernement
+            français, nos voyages sont annulés et nos agences sont fermées jusqu'au 1er mai. Consultez nos dernières
+            informations mises à jour
+            <a href="https://www.gouvernement.fr/info-coronavirus" target="_blank" class="popup-covid__link">ICI</a> .
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

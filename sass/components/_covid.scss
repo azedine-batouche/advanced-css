@@ -1,0 +1,76 @@
+.popup-covid {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgba($color-black, 0.8s);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+
+  &__content {
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba($color-grey-light-2, 0.8s);
+    display: table;
+    overflow: hidden;
+  }
+
+  &__left {
+    width: 30%;
+    display: table-cell;
+    overflow: hidden;
+  }
+
+  &__right {
+    display: table-cell;
+    width: 70%;
+    font-size: 1.6rem;
+    vertical-align: middle;
+    padding: 5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-gray-dark;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 4rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      line-height: 1;
+    }
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__link,
+  &__title {
+    color: $color-danger;
+    text-decoration: none;
+  }
+
+  &:target {
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:target &__content {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
