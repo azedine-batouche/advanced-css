@@ -145,6 +145,8 @@ body {
   position: relative;
   padding: 15rem 0; }
 
+
+
 .section-booking {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #bfd6ffc4, #1f4bb9cb); }
@@ -265,6 +267,8 @@ body {
     .footer__social--pinterest:hover {
       color: #bd081c; }
 
+
+
 .navigation__checkbox {
   display: none; }
 
@@ -371,6 +375,7 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-45deg); }
+
 
 body {
   font-family: 'Lato', sans-serif;
@@ -692,6 +697,7 @@ body {
     width: 100%;
     object-fit: cover; }
 
+
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
@@ -888,3 +894,4 @@ body {
   .popup-covid:target .popup-covid__content {
     opacity: 0;
     visibility: hidden; }
+
