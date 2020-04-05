@@ -91,4 +91,14 @@
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
     opacity: 1;
   }
+
+  @include respond(tab-port) {
+    &__radio-button {
+      left: -19px;
+    }
+    &__radio-group {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  }
 }

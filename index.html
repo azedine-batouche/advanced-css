@@ -4,31 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ParisTours</title>
-    <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png" />
+    <link rel="manifest" href="./img/site.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#13bae9" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="msapplication-config" content="./img/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
-  <body>
+  <body onload="popupCovid()">
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
       </label>
-      <div class="navigation__background">&nbsp;</div>
+      <div class="navigation__background" id="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#section-about" class="navigation__link">A &nbsp;propos &nbsp;de&nbsp; Paris-Tours</a>
+            <a href="#section-about" class="navigation__link" onclick="menuNavigation()">A &nbsp;propos</a>
           </li>
-          <li class="navigation__item"><a href="#section-features" class="navigation__link">Vos &nbsp;avantage</a></li>
-          <li class="navigation__item"><a href="#section-tours" class="navigation__link">Tours &nbsp;populaire</a></li>
-          <li class="navigation__item"><a href="#section-stories" class="navigation__link">Avis &nbsp;clients</a></li>
-          <li class="navigation__item"><a href="#reservation" class="navigation__link">Réservation</a></li>
+          <li class="navigation__item">
+            <a href="#section-features" class="navigation__link" onclick="menuNavigation()">Vos &nbsp;avantage</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-tours" class="navigation__link" onclick="menuNavigation()">Tours &nbsp;populaire</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-stories" class="navigation__link" onclick="menuNavigation()">Avis &nbsp;clients</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#reservation" class="navigation__link" onclick="menuNavigation()">Réservation</a>
+          </li>
         </ul>
       </nav>
     </div>
     <header class="header">
       <div class="header__logo-box">
-        <img src="./img/logo-white.png" alt="logo " class="header__logo" />
+        <img src="./img/logo-black.png" alt="logo " class="header__logo" />
       </div>
       <div class="header__text-box">
         <h1 class="heading-primary">
@@ -229,7 +245,7 @@
         </div>
       </div>
       <div class="u-center-text u-margin-top-huge">
-        <a href="#" class="btn btn--blue">Découvrez le catalogue complet</a>
+        <a href="#" class="btn btn--blue">catalogue complet</a>
       </div>
     </section>
 
@@ -373,7 +389,7 @@
     </section>
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="./img/logo-green-1x.png" alt="full logo" class="footer__logo" />
+        <img src="./img/logo-white.png" alt="logo white" class="footer__logo" />
       </div>
       <div class="row">
         <div class="col-1-of-2">
@@ -402,31 +418,27 @@
       <div class="popup__content">
         <div class="popup__left">
           <img
-            src="https://images.unsplash.com/photo-1526893381913-e311045b8064?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
+            src="https://images.pexels.com/photos/1675942/pexels-photo-1675942.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             alt="Tour photo"
             class="popup__img"
           />
           <img
-            src="https://images.unsplash.com/photo-1474831626379-cfcad2ba6309?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2648&q=80"
+            src="https://images.pexels.com/photos/2738173/pexels-photo-2738173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             alt="Tour photo"
             class="popup__img"
           />
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>
-          <h2 class="heading-secondary u-margin-bottom-medium ">Start booking now</h2>
+          <h2 class="heading-secondary u-margin-bottom-medium ">Réserver maintenant</h2>
           <h3 class="heading-tertiary u-margin-bottom-small">
             Important &ndash; Veuillez lire les conditions ci-dessou avant de réserver
           </h3>
           <p class="popup__text">
-            If you're looking for random paragraphs, you've come to the right place. When a random word or a random
-            sentence isn't quite enough, the next logical step is to find a random paragraph. We created the Random
-            Paragraph Generator with you in mind. The process is quite simple. Choose the number of random paragraphs
-            you'd like to see and click the button. Your chosen number of paragraphs will instantly appear. While it may
-            not be obvious to everyone, there are a number of reasons creating random paragraphs can be useful. A few
-            examples of how some people use this generator are listed in the following paragraphs.
+            Veuillez avant de reserver lire les conditions des ventes ainsi que la politique de rembourssement de
+            billets.
           </p>
-          <a href="#" class="btn btn--blue">Réserver maintenant</a>
+          <a href="#reservation" class="btn btn--blue">Réserver ici</a>
         </div>
       </div>
     </div>
@@ -440,7 +452,7 @@
           />
         </div>
         <div class="popup-covid__right">
-          <a href="#section-tours" class="popup-covid__close">&times;</a>
+          <a href="#" class="popup-covid__close" id="popup-covid__close">&times;</a>
           <p class="popup-covid__text">
             <span class="popup-covid__title">Informations COVID-19 : </span> Conformément aux directives du gouvernement
             français, nos voyages sont annulés et nos agences sont fermées jusqu'au 1er mai. Consultez nos dernières

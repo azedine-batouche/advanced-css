@@ -15,6 +15,15 @@
     box-shadow: 0 1rem 3rem rgba($color-black, $alpha: 0.1);
     cursor: pointer;
     text-align: center;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(iphone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -27,6 +36,15 @@
     background-image: radial-gradient(#bfd6ff, #2773e1);
     z-index: 1000;
     transition: all 0.8s;
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(iphone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {
@@ -47,6 +65,10 @@
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &__item {
