@@ -14,7 +14,8 @@ function popupCovid() {
 }
 
 function menuNavigation() {
-  radio = document.getElementById('navi-toggle');
+  let radio = document.getElementById('navi-toggle');
   radio.checked = false;
-  console.log('radio:' + radio);
 }
+popupCovid();
+menuNavigation();
