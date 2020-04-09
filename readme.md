@@ -31,3 +31,7 @@ cd advanced-css
 ```
 
 and then open index.html file with any browser: chrome, firefox, safari ...
+
+# Device
+
+![Paris-Tours](./img/device.png)
